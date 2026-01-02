@@ -37,5 +37,5 @@ $det(L)=1$로 만들고 $U$의 대각선분만 곱하면 $A$의 determinant를 �
 
 PLU분해($PA=LU$)를 사용하면, 수치적으로 훨씬 안정적인 해를 얻을 수 있음
 
-> 참고 블로그: https://twlab.tistory.com/12
+> 참고 블로그: https://twlab.tistory.com/12(https://twlab.tistory.com/12)
 {: .prompt-info }
