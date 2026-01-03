@@ -68,6 +68,7 @@ $A$ 시스템에 입력을 해도 결과값이 항상 0이 됨.
 {: .prompt-info }
 
 ### 설명
+#### null space란?
 $Ax=O$에서 이 식을 만족시키는 $x$의 집합
 
 O벡터는 무조건 null space에 포함
@@ -83,5 +84,20 @@ x = c\begin{bmatrix} 1 \\
 \end{bmatrix}
 $$
 
-> [참고 블로그](https://twlab.tistory.com/17 "Learn Again! 러너게인")
+#### null space 계산
+- pivot: REF(row echelon form)으로 만들었을 떄, zero row가 아닌 row중에 가장 왼쪽에 있는 0이 아닌 성분
+- pivot column: pivot이 있는 column
+- rank: pivot의 갯수
+- free column: pivot column을 제외한 나머지 column
+- free variable: REF에서 pivot이 없는 열에 해당하는 변수
+- free variable 갯수 = n(column의 수) - r(rank)
+- free variable을 통해서 만들어진 해들의 선형결합이 바로 **null space**
+
+#### RREF(Reduced Row Echelon Form)
+- Gauss Elimination 방법으로 REF로 만듦
+- Gauss-Jordan Elimination으로 pivot원소 위쪽에 있는 원소들을 소거
+- pivot원소를 1로 만들기 위해서 pivot에 해당하는 row 전체를 pivot으로 나눔
+- origial matrix, REF, RREF 모두 null space는 동일
+
+> [참고 블로그1](https://twlab.tistory.com/17 "Learn Again! 러너게인")
 {: .prompt-info }
